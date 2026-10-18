@@ -47,6 +47,20 @@ namespace CoreTests
         }
 
         [Fact]
+        public void to_display_multi_day_spans()
+        {
+            TimeSpan.FromDays(1).ToDisplay().ShouldBe("1 day");
+            TimeSpan.FromDays(3).ToDisplay().ShouldBe("3 days");
+        }
+
+        [Fact]
+        public void to_display_multi_day_spans_with_other_units()
+        {
+            new TimeSpan(2, 5, 0, 0).ToDisplay().ShouldBe("2 days, 5 hours");
+            new TimeSpan(10, 3, 0, 0).ToDisplay().ShouldBe("10 days, 3 hours");
+        }
+
+        [Fact]
         public void to_display()
         {
             4.Seconds().ToDisplay().ShouldBe("4 seconds");
