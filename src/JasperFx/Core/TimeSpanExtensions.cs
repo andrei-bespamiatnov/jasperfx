@@ -45,7 +45,7 @@ $                   # match the entire string";
             }
             else if (time.Days > 1)
             {
-                parts.Add($"{time.Days} days");
+                parts.Add($"{time.Hours} days");
             }
             
             if (time.Hours == 1)
