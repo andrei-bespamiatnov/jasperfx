@@ -1,5 +1,7 @@
 # JasperFx
 
+This fork is used as a test target for Dandelion agent runs.
+
 Foundational elements of the "Critter Stack", including:
 
 * The inevitable grab bag of extension method utilities shared throughout the Critter Stack
